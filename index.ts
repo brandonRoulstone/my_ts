@@ -14,7 +14,7 @@ function checkduplicates(arr :Array<number>){
 console.log(checkduplicates(duplicateArr));
 
 function sort(arrOfNums:Array<number>){
-    if(typeof Array<number>){
+    if(Array.isArray(arrOfNums)){
         return arrOfNums.sort((a:number, b:number)=> a-b)
     }
 }
