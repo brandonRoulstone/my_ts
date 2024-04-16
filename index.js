@@ -27,4 +27,5 @@ function compare(password, prev) {
         console.log('no match');
     }
 }
-console.log(compare('brndon', 'brndon'));
+var myname = 'brandon';
+console.log(compare('brandon', myname));

@@ -23,6 +23,7 @@ let av: Array<number> = [6969, 2343, 12121, 67, 77744, 4744, 1, 2, 34, 5, 6, 6, 
 
 console.log(sort(av));
 
+// a function that takes in two strings and compares the two strings
 function compare(password: string, prev: string){
     // let hashedPwd: string = 'Brandon'
     if(!password.localeCompare(prev)){
@@ -32,7 +33,9 @@ function compare(password: string, prev: string){
     }
 }
 
-console.log(compare('brndon', 'brndon'));
+let myname: string = 'brandon'
+
+console.log(compare('brandon', myname));
 
 
 export {}
