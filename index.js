@@ -28,5 +28,17 @@ function compare(password, prev) {
         console.log('no match');
     }
 }
+var user = {
+    name: "brandon",
+    lastname: "nolast",
+    email: "b@gmail.com",
+    password: "1234",
+    age: 20,
+    active: true
+};
+function initUsers(obj) {
+    return obj;
+}
+console.log(initUsers(user));
 var myname = 'brandon';
 console.log(compare('brandon', myname));

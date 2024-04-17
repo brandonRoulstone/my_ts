@@ -33,6 +33,33 @@ function compare(password: string, prev: string){
     }
 }
 
+interface users {
+    name: string,
+    lastname: string,
+    email: string,
+    password: string,
+    age: number,
+    active: boolean
+}
+
+const user: users = {
+    name: "brandon",
+    lastname: "nolast",
+    email: "b@gmail.com",
+    password: "1234",
+    age: 20,
+    active: true
+}
+
+function initUsers(obj: users){
+    return obj
+}
+
+console.log(initUsers(user));
+
+
+
+
 let myname: string = 'brandon'
 
 console.log(compare('brandon', myname));
