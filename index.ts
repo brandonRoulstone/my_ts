@@ -11,21 +11,20 @@ function checkduplicates(arr :Array<number>){
     return newArr;
 }
 
-console.log(checkduplicates(duplicateArr));
-
-function sort(arrOfNums:Array<number>){
+function ExactSort(arrOfNums:Array<number>){
     if(Array.isArray(arrOfNums)){
-        return arrOfNums.sort((a:number, b:number)=> a-b)
+        return checkduplicates(arrOfNums.sort((a:number, b:number)=> a-b))
     }
 }
 
 let av: Array<number> = [6969, 2343, 12121, 67, 77744, 4744, 1, 2, 34, 5, 6, 6, 7, 7, 8, 9, 9, 10, 30, 38, 43 , 500]
+console.log(ExactSort(duplicateArr));
+console.log(ExactSort(av));
 
-console.log(sort(av));
+
 
 // a function that takes in two strings and compares the two strings
 function compare(password: string, prev: string){
-    // let hashedPwd: string = 'Brandon'
     if(!password.localeCompare(prev)){
         console.log('match');
     } else {
@@ -55,14 +54,22 @@ function initUsers(obj: users){
     return obj
 }
 
-console.log(initUsers(user));
+enum track {
+    LOCATION,
+    MAP,
+    STATE,
+    ADDRESS,
+    ROAD
+}
+
+const geoLocate = track.ROAD;
 
 
 
 
-let myname: string = 'brandon'
+// let myname: string = 'brandon'
 
-console.log(compare('brandon', myname));
+// console.log(compare('brandon', myname));
 
 
 export {}
