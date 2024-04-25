@@ -10,6 +10,7 @@ function checkduplicates(arr) {
     }
     return newArr;
 }
+// takes in an array of numbers and sorts duplcates too!!
 function ExactSort(arrOfNums) {
     if (Array.isArray(arrOfNums)) {
         return checkduplicates(arrOfNums.sort(function (a, b) { return a - b; }));
@@ -20,7 +21,6 @@ console.log(ExactSort(duplicateArr));
 console.log(ExactSort(av));
 // a function that takes in two strings and compares the two strings
 function compare(password, prev) {
-    // let hashedPwd: string = 'Brandon'
     if (!password.localeCompare(prev)) {
         console.log('match');
     }
@@ -28,6 +28,7 @@ function compare(password, prev) {
         console.log('no match');
     }
 }
+console.log(compare("newpwd", "newStr"));
 var user = {
     name: "brandon",
     lastname: "nolast",

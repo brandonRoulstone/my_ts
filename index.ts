@@ -11,6 +11,7 @@ function checkduplicates(arr :Array<number>){
     return newArr;
 }
 
+// takes in an array of numbers and sorts duplcates too!!
 function ExactSort(arrOfNums:Array<number>){
     if(Array.isArray(arrOfNums)){
         return checkduplicates(arrOfNums.sort((a:number, b:number)=> a-b))
@@ -21,8 +22,6 @@ let av: Array<number> = [6969, 2343, 12121, 67, 77744, 4744, 1, 2, 34, 5, 6, 6, 
 console.log(ExactSort(duplicateArr));
 console.log(ExactSort(av));
 
-
-
 // a function that takes in two strings and compares the two strings
 function compare(password: string, prev: string){
     if(!password.localeCompare(prev)){
@@ -31,6 +30,8 @@ function compare(password: string, prev: string){
         console.log('no match');
     }
 }
+console.log(compare("newpwd", "newStr"));
+
 
 interface users {
     name: string,
